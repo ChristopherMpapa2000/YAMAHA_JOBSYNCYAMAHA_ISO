@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11.875, 12" name="YAMAHA">
+  <DataContextMoniker Name="/YAMAHADataContext" />
+  <nestedChildShapes>
+    <classShape Id="ad1b84d9-d88d-45f4-97f5-4253aa9b6655" absoluteBounds="1.25, 5, 2, 5.4246240234375">
+      <DataClassMoniker Name="/YAMAHADataContext/MSTEmployee" />
+      <nestedChildShapes>
+        <elementListCompartment Id="dc7eb2dc-23f9-4450-a63d-934e6696d88b" absoluteBounds="1.2650000000000001, 5.46, 1.9700000000000002, 4.8646240234375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="168bc6f9-c226-4861-b694-bb325d528dd7" absoluteBounds="1.625, 4, 2, 3.5016097005208326">
+      <DataClassMoniker Name="/YAMAHADataContext/MSTDepartment" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6ac921d9-6b11-4255-b037-e2e2ccab152e" absoluteBounds="1.6400000000000001, 4.46, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5fe200fe-f4f6-4033-8d5f-8cc737a02c6f" absoluteBounds="1.375, 3.25, 2, 4.0785139973958326">
+      <DataClassMoniker Name="/YAMAHADataContext/MSTCompany" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5f35004c-d007-417b-91aa-e80e213f1f91" absoluteBounds="1.3900000000000001, 3.71, 1.9700000000000002, 3.518513997395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1e46a72c-d16d-48ef-825f-61cceab9384d" absoluteBounds="8, 6, 2, 2.9247054036458331">
+      <DataClassMoniker Name="/YAMAHADataContext/MSTPosition" />
+      <nestedChildShapes>
+        <elementListCompartment Id="efab3dc8-2765-4e60-8cee-756cad7dcf7c" absoluteBounds="8.015, 6.46, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c0e88a29-2a27-4bd8-97e1-73b3a5f5ff78" absoluteBounds="7.125, 4.75, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/YAMAHADataContext/MSTPositionLevel" />
+      <nestedChildShapes>
+        <elementListCompartment Id="738025a8-d8ae-4d19-9bbd-e82e88d3d478" absoluteBounds="7.14, 5.21, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="879685a7-c837-4ced-b3f4-f84237408f89" absoluteBounds="4.875, 2.125, 2, 1.3862939453125">
+      <DataClassMoniker Name="/YAMAHADataContext/MSTIO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ce5332cc-05b1-4d42-8561-1185c4c5c2b6" absoluteBounds="4.89, 2.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="85938271-2164-4b29-8559-08f5b29b6475" absoluteBounds="9.625, 0.625, 2, 6.9630354817708326">
+      <DataClassMoniker Name="/YAMAHADataContext/ViewEmployee" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9423942b-202e-4647-9d93-ebc98c2cebe2" absoluteBounds="9.64, 1.085, 1.9700000000000002, 6.403035481770833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d74a91a7-febc-43de-9597-2755e7190216" absoluteBounds="5, 6.75, 2, 5.0400211588541657">
+      <DataClassMoniker Name="/YAMAHADataContext/V_EMPLOYEE_TYM" />
+      <nestedChildShapes>
+        <elementListCompartment Id="efaf043e-bd24-42e7-a783-19e603fbab89" absoluteBounds="5.015, 7.21, 1.9700000000000002, 4.4800211588541661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d2c119c2-8902-4586-8a2f-a19a77caa375" absoluteBounds="3.375, 3.875, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/YAMAHADataContext/MSTDivision" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d70c3302-8b36-4ace-94a7-b825f060fa0f" absoluteBounds="3.3899999999999997, 4.335, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

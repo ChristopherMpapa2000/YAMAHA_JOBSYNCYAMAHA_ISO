@@ -1,0 +1,35 @@
+
+
+SELECT
+    VE.EmployeeId,
+    VE.EmployeeCode,
+    VE.Username,
+    VE.NameTh,
+    VE.NameEn,
+    VE.Email,
+    VE.CompanyCode,
+    VE.PositionId,
+    VE.PositionNameTh,
+    VE.PositionNameEn,
+    VE.DepartmentId,
+    VE.DepartmentNameTh,
+    VE.DepartmentNameEn,
+    VE.DivisionId,
+    VE.DivisionNameTh,
+    VE.DivisionNameEn,
+    VE.ModifiedDate,
+    VE.IsActive,
+    VE.ReportToEmpCode,
+    RPT_ME.NameEn AS ReportToNameEn,
+    RPT_ME.NameTh AS ReportToNameTh,
+    RPT_ME.EmployeeCode AS ReportToEmployeeCode
+FROM
+    dbo.ViewEmployee AS VE
+INNER JOIN
+    dbo.MSTEmployee AS ME ON VE.EmployeeId = ME.EmployeeId
+LEFT JOIN
+    dbo.MSTEmployee AS RPT_ME ON VE.ReportToEmpCode = RPT_ME.EmployeeId
+
+
+
+

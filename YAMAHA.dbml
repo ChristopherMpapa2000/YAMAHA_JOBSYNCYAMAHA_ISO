@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="WolfApproveCore.QAR2" Class="YAMAHADataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-11POHA7\SQLEXPRESS;Initial Catalog=WolfApproveCore.QAR2;Persist Security Info=True;User ID=sa;Encrypt=True;Trust Server Certificate=True" SettingsObjectName="JobSyncYAMAHA_EA.Properties.Settings" SettingsPropertyName="WolfApproveCore_QAR2ConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.MSTEmployee" Member="MSTEmployees">
+    <Type Name="MSTEmployee">
+      <Column Name="EmployeeId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="EmployeeCode" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="Username" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NameTh" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="NameEn" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="PositionId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DepartmentId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ReportToEmpCode" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="SignPicPath" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Lang" Type="System.String" DbType="NVarChar(2)" CanBeNull="true" />
+      <Column Name="AccountId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="ModifiedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ModifiedBy" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="ADTitle" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="DivisionId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="EmpLevel" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="EMPL_RCD" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="EmployeeLevel" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="EffectiveDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Userid_Line" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MSTDepartment" Member="MSTDepartments">
+    <Type Name="MSTDepartment">
+      <Column Name="DepartmentId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ParentId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DivisionId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DepartmentCode" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NameTh" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="NameEn" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="ModifiedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ModifiedBy" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AccountId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LeaderId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CompanyCode" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MSTCompany" Member="MSTCompanies">
+    <Type Name="MSTCompany">
+      <Column Name="CompanyId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CompanyCode" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NameTh" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="NameEn" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="AddressTh" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="AddressEn" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Tel" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Fax" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="UrlWeb" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="UrlLogo" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ModifiedBy" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="ModifiedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AccountId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BUCode" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MSTPosition" Member="MSTPositions">
+    <Type Name="MSTPosition">
+      <Column Name="PositionId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NameTh" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="NameEn" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="PositionLevelId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="ModifiedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ModifiedBy" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="AccountId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CompanyCode" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MSTPositionLevel" Member="MSTPositionLevels">
+    <Type Name="MSTPositionLevel">
+      <Column Name="PositionLevelId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NameTh" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="NameEn" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="PositionLevel" Type="System.Decimal" DbType="Decimal(18,1)" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="ModifiedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ModifiedBy" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="AccountId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MSTIO" Member="MSTIOs">
+    <Type Name="MSTIO">
+      <Column Name="Year" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CostCenter" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="IO" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ViewEmployee" Member="ViewEmployees">
+    <Type Name="ViewEmployee">
+      <Column Name="EmployeeId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="EmployeeCode" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="Username" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NameTh" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="NameEn" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="CompanyCode" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="PositionId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PositionNameTh" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="PositionNameEn" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="DepartmentId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DepartmentNameTh" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="DepartmentNameEn" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="SignPicPath" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Lang" Type="System.String" DbType="NVarChar(2)" CanBeNull="true" />
+      <Column Name="AccountId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AccountCode" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="AccountName" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="DefaultLang" Type="System.String" DbType="NVarChar(2)" CanBeNull="true" />
+      <Column Name="RegisteredDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ExpiredDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="ModifiedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ModifiedBy" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="ReportToEmpCode" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="DivisionId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DivisionNameTh" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="DivisionNameEn" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="ADTitle" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Userid_Line" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.V_EMPLOYEE_TYM" Member="V_EMPLOYEE_TYMs">
+    <Type Name="V_EMPLOYEE_TYM">
+      <Column Name="CODEMPID" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="NAMEMPT" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="NAMEMPE" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="CODPOS" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="NAMPOS" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="NAMCENTE" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="NAMCENTHA" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="NAMCENTENG" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="CODCOMP" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="department_t" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="department_e" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="division_t" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="division_e" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="TYPEMP" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="STAEMP" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="EMAIL" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="codeHead" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="NameHeadT" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="NameHeadE" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="CODCOMPR" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="CODPOSPRE" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="CODNATNL" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MSTDivision" Member="MSTDivisions">
+    <Type Name="MSTDivision">
+      <Column Name="DivisionId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NameTh" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="NameEn" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="CreatedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="ModifiedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ModifiedBy" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AccountId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DivisionCode" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

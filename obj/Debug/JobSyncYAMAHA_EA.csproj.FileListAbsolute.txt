@@ -1,0 +1,7 @@
+C:\job_yamaha\JobSyncYAMAHA_EA\JobSyncYAMAHA_EA\bin\Debug\JobSyncYAMAHA_EA.exe.config
+C:\job_yamaha\JobSyncYAMAHA_EA\JobSyncYAMAHA_EA\bin\Debug\JobSyncYAMAHA_EA.exe
+C:\job_yamaha\JobSyncYAMAHA_EA\JobSyncYAMAHA_EA\bin\Debug\JobSyncYAMAHA_EA.pdb
+C:\job_yamaha\JobSyncYAMAHA_EA\JobSyncYAMAHA_EA\obj\Debug\JobSyncYAMAHA_EA.csproj.AssemblyReference.cache
+C:\job_yamaha\JobSyncYAMAHA_EA\JobSyncYAMAHA_EA\obj\Debug\JobSyncYAMAHA_EA.csproj.CoreCompileInputs.cache
+C:\job_yamaha\JobSyncYAMAHA_EA\JobSyncYAMAHA_EA\obj\Debug\JobSyncYAMAHA_EA.exe
+C:\job_yamaha\JobSyncYAMAHA_EA\JobSyncYAMAHA_EA\obj\Debug\JobSyncYAMAHA_EA.pdb
